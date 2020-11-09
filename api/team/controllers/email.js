@@ -7,7 +7,7 @@ module.exports = {
             from: "ticket.nodemy@gmail.com",
             replyTo: "ticket.nodemy@gmail.com",
             subject: "Testing sendgrid and strapi",
-            text: "Message Sendgrid"
+            text: "Message Sendgrid Hello Everyone"
         });
         ctx.send("Email sent");
     }
