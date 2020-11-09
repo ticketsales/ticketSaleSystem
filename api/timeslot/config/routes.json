@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/timeslots",
+      "handler": "timeslot.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timeslots/count",
+      "handler": "timeslot.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timeslots/:id",
+      "handler": "timeslot.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/timeslots",
+      "handler": "timeslot.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/timeslots/:id",
+      "handler": "timeslot.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/timeslots/:id",
+      "handler": "timeslot.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

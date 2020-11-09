@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "halls",
+  "info": {
+    "name": "hall"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "hall_name": {
+      "type": "string",
+      "required": true
+    },
+    "seat_amount": {
+      "type": "integer",
+      "required": true
+    },
+    "location": {
+      "model": "location"
+    },
+    "cinema": {
+      "model": "cinema"
+    },
+    "hall_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

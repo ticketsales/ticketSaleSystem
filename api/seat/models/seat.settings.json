@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seats",
+  "info": {
+    "name": "seat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "seat_number": {
+      "type": "string",
+      "required": true,
+      "default": "A1"
+    },
+    "seat_price": {
+      "type": "integer"
+    },
+    "seat_status": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "default": "false",
+      "required": true
+    },
+    "timeslot": {
+      "model": "timeslot"
+    }
+  }
+}

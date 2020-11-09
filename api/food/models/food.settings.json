@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "name": "food",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "food_name": {
+      "type": "string"
+    },
+    "food_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "snacks": {
+      "collection": "snacks"
+    },
+    "food_id": {
+      "type": "string",
+      "minLength": 14
+    }
+  }
+}

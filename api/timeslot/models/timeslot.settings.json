@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timeslots",
+  "info": {
+    "name": "timeslot",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "start_time": {
+      "type": "time",
+      "required": true
+    },
+    "end_time": {
+      "type": "time",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "hall": {
+      "model": "hall"
+    },
+    "cinema": {
+      "model": "cinema"
+    },
+    "location": {
+      "model": "location"
+    },
+    "movie": {
+      "model": "movie"
+    }
+  }
+}

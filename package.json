@@ -1,0 +1,39 @@
+{
+  "name": "ticket-sale-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "node": "^10.16.0",
+    "node-gyp": "^7.1.0",
+    "strapi": "3.2.4",
+    "strapi-admin": "3.2.4",
+    "strapi-connector-mongoose": "3.2.4",
+    "strapi-plugin-content-manager": "3.2.4",
+    "strapi-plugin-content-type-builder": "3.2.4",
+    "strapi-plugin-email": "^3.2.5",
+    "strapi-plugin-upload": "3.2.4",
+    "strapi-plugin-users-permissions": "3.2.4",
+    "strapi-provider-email-sendgrid": "^3.2.5",
+    "strapi-provider-upload-aws-s3": "^3.2.4",
+    "strapi-utils": "3.2.4"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "ce27950f-86ab-4c81-bb8a-e9f449dd1a97"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

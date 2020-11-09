@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cinemas",
+  "info": {
+    "name": "cinema",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "cinema_name": {
+      "type": "string",
+      "required": true
+    },
+    "cinema_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "brand": {
+      "type": "string"
+    },
+    "location": {
+      "model": "location"
+    }
+  }
+}

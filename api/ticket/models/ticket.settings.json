@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "ticket",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "ticket_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "promotions": {
+      "collection": "promotion"
+    },
+    "timeslot": {
+      "model": "timeslot"
+    },
+    "seats": {
+      "collection": "seat"
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

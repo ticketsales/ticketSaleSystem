@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/footer-menu",
+      "handler": "footer-menu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/footer-menu",
+      "handler": "footer-menu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/footer-menu",
+      "handler": "footer-menu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

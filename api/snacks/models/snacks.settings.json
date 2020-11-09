@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "snacks",
+  "info": {
+    "name": "snacks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/top-left-menu",
+      "handler": "top-left-menu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/top-left-menu",
+      "handler": "top-left-menu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/top-left-menu",
+      "handler": "top-left-menu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

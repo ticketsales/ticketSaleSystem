@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_menus",
+  "info": {
+    "name": "footer-menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "footer": {
+      "type": "dynamiczone",
+      "components": [
+        "menu.links"
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "name": "Movie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "movie_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "movie_duration": {
+      "type": "time",
+      "required": true
+    },
+    "movie_restriction": {
+      "type": "string"
+    },
+    "movie_star": {
+      "type": "string",
+      "required": true
+    },
+    "movie_sypnopsis": {
+      "type": "richtext",
+      "required": true
+    },
+    "movie_thumnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "movie_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "movie_trailer": {
+      "type": "string",
+      "required": false
+    },
+    "movie_rating": {
+      "type": "string"
+    },
+    "movie_country": {
+      "type": "string"
+    },
+    "movie_proceduer": {
+      "type": "string"
+    },
+    "movie_director": {
+      "type": "string"
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "tomatometer": {
+      "type": "integer",
+      "max": 100,
+      "default": 70
+    },
+    "audience_score": {
+      "type": "integer",
+      "max": 100,
+      "default": 88
+    },
+    "movie_language": {
+      "type": "enumeration",
+      "enum": [
+        "japanese",
+        "german",
+        "chinese",
+        "english",
+        "multi",
+        "vietnamese",
+        "korean",
+        "indian",
+        "french",
+        "thai"
+      ],
+      "default": "vietnamese"
+    },
+    "genres": {
+      "collection": "genre"
+    },
+    "experiences": {
+      "collection": "experience"
+    }
+  }
+}
